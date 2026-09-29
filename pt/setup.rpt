@@ -1,0 +1,1057 @@
+****************************************
+Report : timing
+	-path_type full
+	-delay_type max
+	-max_paths 10
+Design : processor
+Version: D-2010.06-SP2
+Date   : Tue Mar 20 05:50:03 2018
+****************************************
+
+
+  Startpoint: reset (input port clocked by clock)
+  Endpoint: dat_path_inst/u1_reg_file/reg_blk_reg[0][0]
+               (recovery check against rising-edge clock clock)
+  Path Group: **async_default**
+  Path Type: max
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 f
+  reset (in)                                              0.00       1.00 f
+  dat_path_inst/reset (mips_datapath)                     0.00       1.00 f
+  dat_path_inst/u1_reg_file/rst (reg_file)                0.00       1.00 f
+  dat_path_inst/u1_reg_file/U1316/ZN (INVX0)              0.11       1.11 r
+  dat_path_inst/u1_reg_file/U1401/ZN (INVX0)              0.10       1.21 f
+  dat_path_inst/u1_reg_file/U1320/ZN (INVX0)              0.10       1.31 r
+  dat_path_inst/u1_reg_file/reg_blk_reg[0][0]/RSTB (DFFARX1)
+                                                          0.00       1.31 r
+  data arrival time                                                  1.31
+
+  clock clock (rise edge)                                10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  dat_path_inst/u1_reg_file/reg_blk_reg[0][0]/CLK (DFFARX1)          9.80 r
+  library recovery time                                   0.07       9.87
+  data required time                                                 9.87
+  ------------------------------------------------------------------------------
+  data required time                                                 9.87
+  data arrival time                                                 -1.31
+  ------------------------------------------------------------------------------
+  slack (MET)                                                        8.56
+
+
+  Startpoint: reset (input port clocked by clock)
+  Endpoint: dat_path_inst/u1_reg_file/reg_blk_reg[0][1]
+               (recovery check against rising-edge clock clock)
+  Path Group: **async_default**
+  Path Type: max
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 f
+  reset (in)                                              0.00       1.00 f
+  dat_path_inst/reset (mips_datapath)                     0.00       1.00 f
+  dat_path_inst/u1_reg_file/rst (reg_file)                0.00       1.00 f
+  dat_path_inst/u1_reg_file/U1316/ZN (INVX0)              0.11       1.11 r
+  dat_path_inst/u1_reg_file/U1401/ZN (INVX0)              0.10       1.21 f
+  dat_path_inst/u1_reg_file/U1320/ZN (INVX0)              0.10       1.31 r
+  dat_path_inst/u1_reg_file/reg_blk_reg[0][1]/RSTB (DFFARX1)
+                                                          0.00       1.31 r
+  data arrival time                                                  1.31
+
+  clock clock (rise edge)                                10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  dat_path_inst/u1_reg_file/reg_blk_reg[0][1]/CLK (DFFARX1)          9.80 r
+  library recovery time                                   0.07       9.87
+  data required time                                                 9.87
+  ------------------------------------------------------------------------------
+  data required time                                                 9.87
+  data arrival time                                                 -1.31
+  ------------------------------------------------------------------------------
+  slack (MET)                                                        8.56
+
+
+  Startpoint: reset (input port clocked by clock)
+  Endpoint: dat_path_inst/u1_reg_file/reg_blk_reg[0][2]
+               (recovery check against rising-edge clock clock)
+  Path Group: **async_default**
+  Path Type: max
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 f
+  reset (in)                                              0.00       1.00 f
+  dat_path_inst/reset (mips_datapath)                     0.00       1.00 f
+  dat_path_inst/u1_reg_file/rst (reg_file)                0.00       1.00 f
+  dat_path_inst/u1_reg_file/U1316/ZN (INVX0)              0.11       1.11 r
+  dat_path_inst/u1_reg_file/U1401/ZN (INVX0)              0.10       1.21 f
+  dat_path_inst/u1_reg_file/U1320/ZN (INVX0)              0.10       1.31 r
+  dat_path_inst/u1_reg_file/reg_blk_reg[0][2]/RSTB (DFFARX1)
+                                                          0.00       1.31 r
+  data arrival time                                                  1.31
+
+  clock clock (rise edge)                                10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  dat_path_inst/u1_reg_file/reg_blk_reg[0][2]/CLK (DFFARX1)          9.80 r
+  library recovery time                                   0.07       9.87
+  data required time                                                 9.87
+  ------------------------------------------------------------------------------
+  data required time                                                 9.87
+  data arrival time                                                 -1.31
+  ------------------------------------------------------------------------------
+  slack (MET)                                                        8.56
+
+
+  Startpoint: reset (input port clocked by clock)
+  Endpoint: dat_path_inst/u1_reg_file/reg_blk_reg[0][3]
+               (recovery check against rising-edge clock clock)
+  Path Group: **async_default**
+  Path Type: max
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 f
+  reset (in)                                              0.00       1.00 f
+  dat_path_inst/reset (mips_datapath)                     0.00       1.00 f
+  dat_path_inst/u1_reg_file/rst (reg_file)                0.00       1.00 f
+  dat_path_inst/u1_reg_file/U1316/ZN (INVX0)              0.11       1.11 r
+  dat_path_inst/u1_reg_file/U1401/ZN (INVX0)              0.10       1.21 f
+  dat_path_inst/u1_reg_file/U1320/ZN (INVX0)              0.10       1.31 r
+  dat_path_inst/u1_reg_file/reg_blk_reg[0][3]/RSTB (DFFARX1)
+                                                          0.00       1.31 r
+  data arrival time                                                  1.31
+
+  clock clock (rise edge)                                10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  dat_path_inst/u1_reg_file/reg_blk_reg[0][3]/CLK (DFFARX1)          9.80 r
+  library recovery time                                   0.07       9.87
+  data required time                                                 9.87
+  ------------------------------------------------------------------------------
+  data required time                                                 9.87
+  data arrival time                                                 -1.31
+  ------------------------------------------------------------------------------
+  slack (MET)                                                        8.56
+
+
+  Startpoint: reset (input port clocked by clock)
+  Endpoint: dat_path_inst/u1_reg_file/reg_blk_reg[0][4]
+               (recovery check against rising-edge clock clock)
+  Path Group: **async_default**
+  Path Type: max
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 f
+  reset (in)                                              0.00       1.00 f
+  dat_path_inst/reset (mips_datapath)                     0.00       1.00 f
+  dat_path_inst/u1_reg_file/rst (reg_file)                0.00       1.00 f
+  dat_path_inst/u1_reg_file/U1317/ZN (INVX0)              0.11       1.11 r
+  dat_path_inst/u1_reg_file/U1402/ZN (INVX0)              0.10       1.21 f
+  dat_path_inst/u1_reg_file/U1321/ZN (INVX0)              0.10       1.31 r
+  dat_path_inst/u1_reg_file/reg_blk_reg[0][4]/RSTB (DFFARX1)
+                                                          0.00       1.31 r
+  data arrival time                                                  1.31
+
+  clock clock (rise edge)                                10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  dat_path_inst/u1_reg_file/reg_blk_reg[0][4]/CLK (DFFARX1)          9.80 r
+  library recovery time                                   0.07       9.87
+  data required time                                                 9.87
+  ------------------------------------------------------------------------------
+  data required time                                                 9.87
+  data arrival time                                                 -1.31
+  ------------------------------------------------------------------------------
+  slack (MET)                                                        8.56
+
+
+  Startpoint: reset (input port clocked by clock)
+  Endpoint: dat_path_inst/u1_reg_file/reg_blk_reg[0][5]
+               (recovery check against rising-edge clock clock)
+  Path Group: **async_default**
+  Path Type: max
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 f
+  reset (in)                                              0.00       1.00 f
+  dat_path_inst/reset (mips_datapath)                     0.00       1.00 f
+  dat_path_inst/u1_reg_file/rst (reg_file)                0.00       1.00 f
+  dat_path_inst/u1_reg_file/U1317/ZN (INVX0)              0.11       1.11 r
+  dat_path_inst/u1_reg_file/U1402/ZN (INVX0)              0.10       1.21 f
+  dat_path_inst/u1_reg_file/U1321/ZN (INVX0)              0.10       1.31 r
+  dat_path_inst/u1_reg_file/reg_blk_reg[0][5]/RSTB (DFFARX1)
+                                                          0.00       1.31 r
+  data arrival time                                                  1.31
+
+  clock clock (rise edge)                                10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  dat_path_inst/u1_reg_file/reg_blk_reg[0][5]/CLK (DFFARX1)          9.80 r
+  library recovery time                                   0.07       9.87
+  data required time                                                 9.87
+  ------------------------------------------------------------------------------
+  data required time                                                 9.87
+  data arrival time                                                 -1.31
+  ------------------------------------------------------------------------------
+  slack (MET)                                                        8.56
+
+
+  Startpoint: reset (input port clocked by clock)
+  Endpoint: dat_path_inst/u1_reg_file/reg_blk_reg[0][6]
+               (recovery check against rising-edge clock clock)
+  Path Group: **async_default**
+  Path Type: max
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 f
+  reset (in)                                              0.00       1.00 f
+  dat_path_inst/reset (mips_datapath)                     0.00       1.00 f
+  dat_path_inst/u1_reg_file/rst (reg_file)                0.00       1.00 f
+  dat_path_inst/u1_reg_file/U1317/ZN (INVX0)              0.11       1.11 r
+  dat_path_inst/u1_reg_file/U1402/ZN (INVX0)              0.10       1.21 f
+  dat_path_inst/u1_reg_file/U1321/ZN (INVX0)              0.10       1.31 r
+  dat_path_inst/u1_reg_file/reg_blk_reg[0][6]/RSTB (DFFARX1)
+                                                          0.00       1.31 r
+  data arrival time                                                  1.31
+
+  clock clock (rise edge)                                10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  dat_path_inst/u1_reg_file/reg_blk_reg[0][6]/CLK (DFFARX1)          9.80 r
+  library recovery time                                   0.07       9.87
+  data required time                                                 9.87
+  ------------------------------------------------------------------------------
+  data required time                                                 9.87
+  data arrival time                                                 -1.31
+  ------------------------------------------------------------------------------
+  slack (MET)                                                        8.56
+
+
+  Startpoint: reset (input port clocked by clock)
+  Endpoint: dat_path_inst/u1_reg_file/reg_blk_reg[0][7]
+               (recovery check against rising-edge clock clock)
+  Path Group: **async_default**
+  Path Type: max
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 f
+  reset (in)                                              0.00       1.00 f
+  dat_path_inst/reset (mips_datapath)                     0.00       1.00 f
+  dat_path_inst/u1_reg_file/rst (reg_file)                0.00       1.00 f
+  dat_path_inst/u1_reg_file/U1317/ZN (INVX0)              0.11       1.11 r
+  dat_path_inst/u1_reg_file/U1402/ZN (INVX0)              0.10       1.21 f
+  dat_path_inst/u1_reg_file/U1321/ZN (INVX0)              0.10       1.31 r
+  dat_path_inst/u1_reg_file/reg_blk_reg[0][7]/RSTB (DFFARX1)
+                                                          0.00       1.31 r
+  data arrival time                                                  1.31
+
+  clock clock (rise edge)                                10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  dat_path_inst/u1_reg_file/reg_blk_reg[0][7]/CLK (DFFARX1)          9.80 r
+  library recovery time                                   0.07       9.87
+  data required time                                                 9.87
+  ------------------------------------------------------------------------------
+  data required time                                                 9.87
+  data arrival time                                                 -1.31
+  ------------------------------------------------------------------------------
+  slack (MET)                                                        8.56
+
+
+  Startpoint: reset (input port clocked by clock)
+  Endpoint: dat_path_inst/u1_reg_file/reg_blk_reg[0][8]
+               (recovery check against rising-edge clock clock)
+  Path Group: **async_default**
+  Path Type: max
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 f
+  reset (in)                                              0.00       1.00 f
+  dat_path_inst/reset (mips_datapath)                     0.00       1.00 f
+  dat_path_inst/u1_reg_file/rst (reg_file)                0.00       1.00 f
+  dat_path_inst/u1_reg_file/U1317/ZN (INVX0)              0.11       1.11 r
+  dat_path_inst/u1_reg_file/U1402/ZN (INVX0)              0.10       1.21 f
+  dat_path_inst/u1_reg_file/U1321/ZN (INVX0)              0.10       1.31 r
+  dat_path_inst/u1_reg_file/reg_blk_reg[0][8]/RSTB (DFFARX1)
+                                                          0.00       1.31 r
+  data arrival time                                                  1.31
+
+  clock clock (rise edge)                                10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  dat_path_inst/u1_reg_file/reg_blk_reg[0][8]/CLK (DFFARX1)          9.80 r
+  library recovery time                                   0.07       9.87
+  data required time                                                 9.87
+  ------------------------------------------------------------------------------
+  data required time                                                 9.87
+  data arrival time                                                 -1.31
+  ------------------------------------------------------------------------------
+  slack (MET)                                                        8.56
+
+
+  Startpoint: reset (input port clocked by clock)
+  Endpoint: dat_path_inst/u1_reg_file/reg_blk_reg[0][9]
+               (recovery check against rising-edge clock clock)
+  Path Group: **async_default**
+  Path Type: max
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 f
+  reset (in)                                              0.00       1.00 f
+  dat_path_inst/reset (mips_datapath)                     0.00       1.00 f
+  dat_path_inst/u1_reg_file/rst (reg_file)                0.00       1.00 f
+  dat_path_inst/u1_reg_file/U1317/ZN (INVX0)              0.11       1.11 r
+  dat_path_inst/u1_reg_file/U1402/ZN (INVX0)              0.10       1.21 f
+  dat_path_inst/u1_reg_file/U1321/ZN (INVX0)              0.10       1.31 r
+  dat_path_inst/u1_reg_file/reg_blk_reg[0][9]/RSTB (DFFARX1)
+                                                          0.00       1.31 r
+  data arrival time                                                  1.31
+
+  clock clock (rise edge)                                10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  dat_path_inst/u1_reg_file/reg_blk_reg[0][9]/CLK (DFFARX1)          9.80 r
+  library recovery time                                   0.07       9.87
+  data required time                                                 9.87
+  ------------------------------------------------------------------------------
+  data required time                                                 9.87
+  data arrival time                                                 -1.31
+  ------------------------------------------------------------------------------
+  slack (MET)                                                        8.56
+
+
+  Startpoint: Inst[16] (input port clocked by clock)
+  Endpoint: Addr[31] (output port clocked by clock)
+  Path Group: clock
+  Path Type: max
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 f
+  Inst[16] (in)                                           0.00       1.00 f
+  dat_path_inst/inst[16] (mips_datapath)                  0.00       1.00 f
+  dat_path_inst/u1_reg_file/rd_addr2[0] (reg_file)        0.00       1.00 f
+  dat_path_inst/u1_reg_file/U4/ZN (INVX0)                 0.06       1.06 r
+  dat_path_inst/u1_reg_file/U1328/ZN (INVX0)              0.19       1.25 f
+  dat_path_inst/u1_reg_file/U1786/Q (MUX41X1)             0.12       1.37 r
+  dat_path_inst/u1_reg_file/U1787/Q (MUX41X1)             0.08       1.44 r
+  dat_path_inst/u1_reg_file/U1793/Q (MUX21X1)             0.06       1.50 r
+  dat_path_inst/u1_reg_file/rd_data2[0] (reg_file)        0.00       1.50 r
+  dat_path_inst/U153/Q (AO22X1)                           0.07       1.57 r
+  dat_path_inst/u2_alu/in2[0] (mips_alu)                  0.00       1.57 r
+  dat_path_inst/u2_alu/add_38/B[0] (mips_alu_DW01_add_0)
+                                                          0.00       1.57 r
+  dat_path_inst/u2_alu/add_38/U1/Q (AND2X1)               0.04       1.61 r
+  dat_path_inst/u2_alu/add_38/U1_1/CO (FADDX1)            0.06       1.67 r
+  dat_path_inst/u2_alu/add_38/U1_2/CO (FADDX1)            0.06       1.74 r
+  dat_path_inst/u2_alu/add_38/U1_3/CO (FADDX1)            0.06       1.80 r
+  dat_path_inst/u2_alu/add_38/U1_4/CO (FADDX1)            0.06       1.86 r
+  dat_path_inst/u2_alu/add_38/U1_5/CO (FADDX1)            0.06       1.93 r
+  dat_path_inst/u2_alu/add_38/U1_6/CO (FADDX1)            0.06       1.99 r
+  dat_path_inst/u2_alu/add_38/U1_7/CO (FADDX1)            0.06       2.05 r
+  dat_path_inst/u2_alu/add_38/U1_8/CO (FADDX1)            0.06       2.12 r
+  dat_path_inst/u2_alu/add_38/U1_9/CO (FADDX1)            0.06       2.18 r
+  dat_path_inst/u2_alu/add_38/U1_10/CO (FADDX1)           0.06       2.24 r
+  dat_path_inst/u2_alu/add_38/U1_11/CO (FADDX1)           0.06       2.31 r
+  dat_path_inst/u2_alu/add_38/U1_12/CO (FADDX1)           0.06       2.37 r
+  dat_path_inst/u2_alu/add_38/U1_13/CO (FADDX1)           0.06       2.43 r
+  dat_path_inst/u2_alu/add_38/U1_14/CO (FADDX1)           0.06       2.50 r
+  dat_path_inst/u2_alu/add_38/U1_15/CO (FADDX1)           0.06       2.56 r
+  dat_path_inst/u2_alu/add_38/U1_16/CO (FADDX1)           0.06       2.62 r
+  dat_path_inst/u2_alu/add_38/U1_17/CO (FADDX1)           0.06       2.69 r
+  dat_path_inst/u2_alu/add_38/U1_18/CO (FADDX1)           0.06       2.75 r
+  dat_path_inst/u2_alu/add_38/U1_19/CO (FADDX1)           0.06       2.81 r
+  dat_path_inst/u2_alu/add_38/U1_20/CO (FADDX1)           0.06       2.88 r
+  dat_path_inst/u2_alu/add_38/U1_21/CO (FADDX1)           0.06       2.94 r
+  dat_path_inst/u2_alu/add_38/U1_22/CO (FADDX1)           0.06       3.00 r
+  dat_path_inst/u2_alu/add_38/U1_23/CO (FADDX1)           0.06       3.07 r
+  dat_path_inst/u2_alu/add_38/U1_24/CO (FADDX1)           0.06       3.13 r
+  dat_path_inst/u2_alu/add_38/U1_25/CO (FADDX1)           0.06       3.19 r
+  dat_path_inst/u2_alu/add_38/U1_26/CO (FADDX1)           0.06       3.26 r
+  dat_path_inst/u2_alu/add_38/U1_27/CO (FADDX1)           0.06       3.32 r
+  dat_path_inst/u2_alu/add_38/U1_28/CO (FADDX1)           0.06       3.38 r
+  dat_path_inst/u2_alu/add_38/U1_29/CO (FADDX1)           0.06       3.45 r
+  dat_path_inst/u2_alu/add_38/U1_30/CO (FADDX1)           0.06       3.51 r
+  dat_path_inst/u2_alu/add_38/U1_31/S (FADDX1)            0.05       3.56 r
+  dat_path_inst/u2_alu/add_38/SUM[31] (mips_alu_DW01_add_0)
+                                                          0.00       3.56 r
+  dat_path_inst/u2_alu/U80/Q (AO221X1)                    0.07       3.63 r
+  dat_path_inst/u2_alu/alu_out[31] (mips_alu)             0.00       3.63 r
+  dat_path_inst/data_mem_addr[31] (mips_datapath)         0.00       3.63 r
+  Addr[31] (out)                                          0.00       3.63 r
+  data arrival time                                                  3.63
+
+  clock clock (rise edge)                                10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  output external delay                                  -1.00       8.80
+  data required time                                                 8.80
+  ------------------------------------------------------------------------------
+  data required time                                                 8.80
+  data arrival time                                                 -3.63
+  ------------------------------------------------------------------------------
+  slack (MET)                                                        5.17
+
+
+  Startpoint: Inst[16] (input port clocked by clock)
+  Endpoint: Addr[30] (output port clocked by clock)
+  Path Group: clock
+  Path Type: max
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 f
+  Inst[16] (in)                                           0.00       1.00 f
+  dat_path_inst/inst[16] (mips_datapath)                  0.00       1.00 f
+  dat_path_inst/u1_reg_file/rd_addr2[0] (reg_file)        0.00       1.00 f
+  dat_path_inst/u1_reg_file/U4/ZN (INVX0)                 0.06       1.06 r
+  dat_path_inst/u1_reg_file/U1328/ZN (INVX0)              0.19       1.25 f
+  dat_path_inst/u1_reg_file/U1786/Q (MUX41X1)             0.12       1.37 r
+  dat_path_inst/u1_reg_file/U1787/Q (MUX41X1)             0.08       1.44 r
+  dat_path_inst/u1_reg_file/U1793/Q (MUX21X1)             0.06       1.50 r
+  dat_path_inst/u1_reg_file/rd_data2[0] (reg_file)        0.00       1.50 r
+  dat_path_inst/U153/Q (AO22X1)                           0.07       1.57 r
+  dat_path_inst/u2_alu/in2[0] (mips_alu)                  0.00       1.57 r
+  dat_path_inst/u2_alu/add_38/B[0] (mips_alu_DW01_add_0)
+                                                          0.00       1.57 r
+  dat_path_inst/u2_alu/add_38/U1/Q (AND2X1)               0.04       1.61 r
+  dat_path_inst/u2_alu/add_38/U1_1/CO (FADDX1)            0.06       1.67 r
+  dat_path_inst/u2_alu/add_38/U1_2/CO (FADDX1)            0.06       1.74 r
+  dat_path_inst/u2_alu/add_38/U1_3/CO (FADDX1)            0.06       1.80 r
+  dat_path_inst/u2_alu/add_38/U1_4/CO (FADDX1)            0.06       1.86 r
+  dat_path_inst/u2_alu/add_38/U1_5/CO (FADDX1)            0.06       1.93 r
+  dat_path_inst/u2_alu/add_38/U1_6/CO (FADDX1)            0.06       1.99 r
+  dat_path_inst/u2_alu/add_38/U1_7/CO (FADDX1)            0.06       2.05 r
+  dat_path_inst/u2_alu/add_38/U1_8/CO (FADDX1)            0.06       2.12 r
+  dat_path_inst/u2_alu/add_38/U1_9/CO (FADDX1)            0.06       2.18 r
+  dat_path_inst/u2_alu/add_38/U1_10/CO (FADDX1)           0.06       2.24 r
+  dat_path_inst/u2_alu/add_38/U1_11/CO (FADDX1)           0.06       2.31 r
+  dat_path_inst/u2_alu/add_38/U1_12/CO (FADDX1)           0.06       2.37 r
+  dat_path_inst/u2_alu/add_38/U1_13/CO (FADDX1)           0.06       2.43 r
+  dat_path_inst/u2_alu/add_38/U1_14/CO (FADDX1)           0.06       2.50 r
+  dat_path_inst/u2_alu/add_38/U1_15/CO (FADDX1)           0.06       2.56 r
+  dat_path_inst/u2_alu/add_38/U1_16/CO (FADDX1)           0.06       2.62 r
+  dat_path_inst/u2_alu/add_38/U1_17/CO (FADDX1)           0.06       2.69 r
+  dat_path_inst/u2_alu/add_38/U1_18/CO (FADDX1)           0.06       2.75 r
+  dat_path_inst/u2_alu/add_38/U1_19/CO (FADDX1)           0.06       2.81 r
+  dat_path_inst/u2_alu/add_38/U1_20/CO (FADDX1)           0.06       2.88 r
+  dat_path_inst/u2_alu/add_38/U1_21/CO (FADDX1)           0.06       2.94 r
+  dat_path_inst/u2_alu/add_38/U1_22/CO (FADDX1)           0.06       3.00 r
+  dat_path_inst/u2_alu/add_38/U1_23/CO (FADDX1)           0.06       3.07 r
+  dat_path_inst/u2_alu/add_38/U1_24/CO (FADDX1)           0.06       3.13 r
+  dat_path_inst/u2_alu/add_38/U1_25/CO (FADDX1)           0.06       3.19 r
+  dat_path_inst/u2_alu/add_38/U1_26/CO (FADDX1)           0.06       3.26 r
+  dat_path_inst/u2_alu/add_38/U1_27/CO (FADDX1)           0.06       3.32 r
+  dat_path_inst/u2_alu/add_38/U1_28/CO (FADDX1)           0.06       3.38 r
+  dat_path_inst/u2_alu/add_38/U1_29/CO (FADDX1)           0.06       3.45 r
+  dat_path_inst/u2_alu/add_38/U1_30/S (FADDX1)            0.05       3.49 r
+  dat_path_inst/u2_alu/add_38/SUM[30] (mips_alu_DW01_add_0)
+                                                          0.00       3.49 r
+  dat_path_inst/u2_alu/U83/Q (AO221X1)                    0.07       3.57 r
+  dat_path_inst/u2_alu/alu_out[30] (mips_alu)             0.00       3.57 r
+  dat_path_inst/data_mem_addr[30] (mips_datapath)         0.00       3.57 r
+  Addr[30] (out)                                          0.00       3.57 r
+  data arrival time                                                  3.57
+
+  clock clock (rise edge)                                10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  output external delay                                  -1.00       8.80
+  data required time                                                 8.80
+  ------------------------------------------------------------------------------
+  data required time                                                 8.80
+  data arrival time                                                 -3.57
+  ------------------------------------------------------------------------------
+  slack (MET)                                                        5.23
+
+
+  Startpoint: Inst[16] (input port clocked by clock)
+  Endpoint: Addr[29] (output port clocked by clock)
+  Path Group: clock
+  Path Type: max
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 f
+  Inst[16] (in)                                           0.00       1.00 f
+  dat_path_inst/inst[16] (mips_datapath)                  0.00       1.00 f
+  dat_path_inst/u1_reg_file/rd_addr2[0] (reg_file)        0.00       1.00 f
+  dat_path_inst/u1_reg_file/U4/ZN (INVX0)                 0.06       1.06 r
+  dat_path_inst/u1_reg_file/U1328/ZN (INVX0)              0.19       1.25 f
+  dat_path_inst/u1_reg_file/U1786/Q (MUX41X1)             0.12       1.37 r
+  dat_path_inst/u1_reg_file/U1787/Q (MUX41X1)             0.08       1.44 r
+  dat_path_inst/u1_reg_file/U1793/Q (MUX21X1)             0.06       1.50 r
+  dat_path_inst/u1_reg_file/rd_data2[0] (reg_file)        0.00       1.50 r
+  dat_path_inst/U153/Q (AO22X1)                           0.07       1.57 r
+  dat_path_inst/u2_alu/in2[0] (mips_alu)                  0.00       1.57 r
+  dat_path_inst/u2_alu/add_38/B[0] (mips_alu_DW01_add_0)
+                                                          0.00       1.57 r
+  dat_path_inst/u2_alu/add_38/U1/Q (AND2X1)               0.04       1.61 r
+  dat_path_inst/u2_alu/add_38/U1_1/CO (FADDX1)            0.06       1.67 r
+  dat_path_inst/u2_alu/add_38/U1_2/CO (FADDX1)            0.06       1.74 r
+  dat_path_inst/u2_alu/add_38/U1_3/CO (FADDX1)            0.06       1.80 r
+  dat_path_inst/u2_alu/add_38/U1_4/CO (FADDX1)            0.06       1.86 r
+  dat_path_inst/u2_alu/add_38/U1_5/CO (FADDX1)            0.06       1.93 r
+  dat_path_inst/u2_alu/add_38/U1_6/CO (FADDX1)            0.06       1.99 r
+  dat_path_inst/u2_alu/add_38/U1_7/CO (FADDX1)            0.06       2.05 r
+  dat_path_inst/u2_alu/add_38/U1_8/CO (FADDX1)            0.06       2.12 r
+  dat_path_inst/u2_alu/add_38/U1_9/CO (FADDX1)            0.06       2.18 r
+  dat_path_inst/u2_alu/add_38/U1_10/CO (FADDX1)           0.06       2.24 r
+  dat_path_inst/u2_alu/add_38/U1_11/CO (FADDX1)           0.06       2.31 r
+  dat_path_inst/u2_alu/add_38/U1_12/CO (FADDX1)           0.06       2.37 r
+  dat_path_inst/u2_alu/add_38/U1_13/CO (FADDX1)           0.06       2.43 r
+  dat_path_inst/u2_alu/add_38/U1_14/CO (FADDX1)           0.06       2.50 r
+  dat_path_inst/u2_alu/add_38/U1_15/CO (FADDX1)           0.06       2.56 r
+  dat_path_inst/u2_alu/add_38/U1_16/CO (FADDX1)           0.06       2.62 r
+  dat_path_inst/u2_alu/add_38/U1_17/CO (FADDX1)           0.06       2.69 r
+  dat_path_inst/u2_alu/add_38/U1_18/CO (FADDX1)           0.06       2.75 r
+  dat_path_inst/u2_alu/add_38/U1_19/CO (FADDX1)           0.06       2.81 r
+  dat_path_inst/u2_alu/add_38/U1_20/CO (FADDX1)           0.06       2.88 r
+  dat_path_inst/u2_alu/add_38/U1_21/CO (FADDX1)           0.06       2.94 r
+  dat_path_inst/u2_alu/add_38/U1_22/CO (FADDX1)           0.06       3.00 r
+  dat_path_inst/u2_alu/add_38/U1_23/CO (FADDX1)           0.06       3.07 r
+  dat_path_inst/u2_alu/add_38/U1_24/CO (FADDX1)           0.06       3.13 r
+  dat_path_inst/u2_alu/add_38/U1_25/CO (FADDX1)           0.06       3.19 r
+  dat_path_inst/u2_alu/add_38/U1_26/CO (FADDX1)           0.06       3.26 r
+  dat_path_inst/u2_alu/add_38/U1_27/CO (FADDX1)           0.06       3.32 r
+  dat_path_inst/u2_alu/add_38/U1_28/CO (FADDX1)           0.06       3.38 r
+  dat_path_inst/u2_alu/add_38/U1_29/S (FADDX1)            0.05       3.43 r
+  dat_path_inst/u2_alu/add_38/SUM[29] (mips_alu_DW01_add_0)
+                                                          0.00       3.43 r
+  dat_path_inst/u2_alu/U89/Q (AO221X1)                    0.07       3.51 r
+  dat_path_inst/u2_alu/alu_out[29] (mips_alu)             0.00       3.51 r
+  dat_path_inst/data_mem_addr[29] (mips_datapath)         0.00       3.51 r
+  Addr[29] (out)                                          0.00       3.51 r
+  data arrival time                                                  3.51
+
+  clock clock (rise edge)                                10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  output external delay                                  -1.00       8.80
+  data required time                                                 8.80
+  ------------------------------------------------------------------------------
+  data required time                                                 8.80
+  data arrival time                                                 -3.51
+  ------------------------------------------------------------------------------
+  slack (MET)                                                        5.29
+
+
+  Startpoint: Inst[16] (input port clocked by clock)
+  Endpoint: Addr[28] (output port clocked by clock)
+  Path Group: clock
+  Path Type: max
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 f
+  Inst[16] (in)                                           0.00       1.00 f
+  dat_path_inst/inst[16] (mips_datapath)                  0.00       1.00 f
+  dat_path_inst/u1_reg_file/rd_addr2[0] (reg_file)        0.00       1.00 f
+  dat_path_inst/u1_reg_file/U4/ZN (INVX0)                 0.06       1.06 r
+  dat_path_inst/u1_reg_file/U1328/ZN (INVX0)              0.19       1.25 f
+  dat_path_inst/u1_reg_file/U1786/Q (MUX41X1)             0.12       1.37 r
+  dat_path_inst/u1_reg_file/U1787/Q (MUX41X1)             0.08       1.44 r
+  dat_path_inst/u1_reg_file/U1793/Q (MUX21X1)             0.06       1.50 r
+  dat_path_inst/u1_reg_file/rd_data2[0] (reg_file)        0.00       1.50 r
+  dat_path_inst/U153/Q (AO22X1)                           0.07       1.57 r
+  dat_path_inst/u2_alu/in2[0] (mips_alu)                  0.00       1.57 r
+  dat_path_inst/u2_alu/add_38/B[0] (mips_alu_DW01_add_0)
+                                                          0.00       1.57 r
+  dat_path_inst/u2_alu/add_38/U1/Q (AND2X1)               0.04       1.61 r
+  dat_path_inst/u2_alu/add_38/U1_1/CO (FADDX1)            0.06       1.67 r
+  dat_path_inst/u2_alu/add_38/U1_2/CO (FADDX1)            0.06       1.74 r
+  dat_path_inst/u2_alu/add_38/U1_3/CO (FADDX1)            0.06       1.80 r
+  dat_path_inst/u2_alu/add_38/U1_4/CO (FADDX1)            0.06       1.86 r
+  dat_path_inst/u2_alu/add_38/U1_5/CO (FADDX1)            0.06       1.93 r
+  dat_path_inst/u2_alu/add_38/U1_6/CO (FADDX1)            0.06       1.99 r
+  dat_path_inst/u2_alu/add_38/U1_7/CO (FADDX1)            0.06       2.05 r
+  dat_path_inst/u2_alu/add_38/U1_8/CO (FADDX1)            0.06       2.12 r
+  dat_path_inst/u2_alu/add_38/U1_9/CO (FADDX1)            0.06       2.18 r
+  dat_path_inst/u2_alu/add_38/U1_10/CO (FADDX1)           0.06       2.24 r
+  dat_path_inst/u2_alu/add_38/U1_11/CO (FADDX1)           0.06       2.31 r
+  dat_path_inst/u2_alu/add_38/U1_12/CO (FADDX1)           0.06       2.37 r
+  dat_path_inst/u2_alu/add_38/U1_13/CO (FADDX1)           0.06       2.43 r
+  dat_path_inst/u2_alu/add_38/U1_14/CO (FADDX1)           0.06       2.50 r
+  dat_path_inst/u2_alu/add_38/U1_15/CO (FADDX1)           0.06       2.56 r
+  dat_path_inst/u2_alu/add_38/U1_16/CO (FADDX1)           0.06       2.62 r
+  dat_path_inst/u2_alu/add_38/U1_17/CO (FADDX1)           0.06       2.69 r
+  dat_path_inst/u2_alu/add_38/U1_18/CO (FADDX1)           0.06       2.75 r
+  dat_path_inst/u2_alu/add_38/U1_19/CO (FADDX1)           0.06       2.81 r
+  dat_path_inst/u2_alu/add_38/U1_20/CO (FADDX1)           0.06       2.88 r
+  dat_path_inst/u2_alu/add_38/U1_21/CO (FADDX1)           0.06       2.94 r
+  dat_path_inst/u2_alu/add_38/U1_22/CO (FADDX1)           0.06       3.00 r
+  dat_path_inst/u2_alu/add_38/U1_23/CO (FADDX1)           0.06       3.07 r
+  dat_path_inst/u2_alu/add_38/U1_24/CO (FADDX1)           0.06       3.13 r
+  dat_path_inst/u2_alu/add_38/U1_25/CO (FADDX1)           0.06       3.19 r
+  dat_path_inst/u2_alu/add_38/U1_26/CO (FADDX1)           0.06       3.26 r
+  dat_path_inst/u2_alu/add_38/U1_27/CO (FADDX1)           0.06       3.32 r
+  dat_path_inst/u2_alu/add_38/U1_28/S (FADDX1)            0.05       3.37 r
+  dat_path_inst/u2_alu/add_38/SUM[28] (mips_alu_DW01_add_0)
+                                                          0.00       3.37 r
+  dat_path_inst/u2_alu/U92/Q (AO221X1)                    0.07       3.44 r
+  dat_path_inst/u2_alu/alu_out[28] (mips_alu)             0.00       3.44 r
+  dat_path_inst/data_mem_addr[28] (mips_datapath)         0.00       3.44 r
+  Addr[28] (out)                                          0.00       3.44 r
+  data arrival time                                                  3.44
+
+  clock clock (rise edge)                                10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  output external delay                                  -1.00       8.80
+  data required time                                                 8.80
+  ------------------------------------------------------------------------------
+  data required time                                                 8.80
+  data arrival time                                                 -3.44
+  ------------------------------------------------------------------------------
+  slack (MET)                                                        5.36
+
+
+  Startpoint: Inst[16] (input port clocked by clock)
+  Endpoint: Addr[27] (output port clocked by clock)
+  Path Group: clock
+  Path Type: max
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 f
+  Inst[16] (in)                                           0.00       1.00 f
+  dat_path_inst/inst[16] (mips_datapath)                  0.00       1.00 f
+  dat_path_inst/u1_reg_file/rd_addr2[0] (reg_file)        0.00       1.00 f
+  dat_path_inst/u1_reg_file/U4/ZN (INVX0)                 0.06       1.06 r
+  dat_path_inst/u1_reg_file/U1328/ZN (INVX0)              0.19       1.25 f
+  dat_path_inst/u1_reg_file/U1786/Q (MUX41X1)             0.12       1.37 r
+  dat_path_inst/u1_reg_file/U1787/Q (MUX41X1)             0.08       1.44 r
+  dat_path_inst/u1_reg_file/U1793/Q (MUX21X1)             0.06       1.50 r
+  dat_path_inst/u1_reg_file/rd_data2[0] (reg_file)        0.00       1.50 r
+  dat_path_inst/U153/Q (AO22X1)                           0.07       1.57 r
+  dat_path_inst/u2_alu/in2[0] (mips_alu)                  0.00       1.57 r
+  dat_path_inst/u2_alu/add_38/B[0] (mips_alu_DW01_add_0)
+                                                          0.00       1.57 r
+  dat_path_inst/u2_alu/add_38/U1/Q (AND2X1)               0.04       1.61 r
+  dat_path_inst/u2_alu/add_38/U1_1/CO (FADDX1)            0.06       1.67 r
+  dat_path_inst/u2_alu/add_38/U1_2/CO (FADDX1)            0.06       1.74 r
+  dat_path_inst/u2_alu/add_38/U1_3/CO (FADDX1)            0.06       1.80 r
+  dat_path_inst/u2_alu/add_38/U1_4/CO (FADDX1)            0.06       1.86 r
+  dat_path_inst/u2_alu/add_38/U1_5/CO (FADDX1)            0.06       1.93 r
+  dat_path_inst/u2_alu/add_38/U1_6/CO (FADDX1)            0.06       1.99 r
+  dat_path_inst/u2_alu/add_38/U1_7/CO (FADDX1)            0.06       2.05 r
+  dat_path_inst/u2_alu/add_38/U1_8/CO (FADDX1)            0.06       2.12 r
+  dat_path_inst/u2_alu/add_38/U1_9/CO (FADDX1)            0.06       2.18 r
+  dat_path_inst/u2_alu/add_38/U1_10/CO (FADDX1)           0.06       2.24 r
+  dat_path_inst/u2_alu/add_38/U1_11/CO (FADDX1)           0.06       2.31 r
+  dat_path_inst/u2_alu/add_38/U1_12/CO (FADDX1)           0.06       2.37 r
+  dat_path_inst/u2_alu/add_38/U1_13/CO (FADDX1)           0.06       2.43 r
+  dat_path_inst/u2_alu/add_38/U1_14/CO (FADDX1)           0.06       2.50 r
+  dat_path_inst/u2_alu/add_38/U1_15/CO (FADDX1)           0.06       2.56 r
+  dat_path_inst/u2_alu/add_38/U1_16/CO (FADDX1)           0.06       2.62 r
+  dat_path_inst/u2_alu/add_38/U1_17/CO (FADDX1)           0.06       2.69 r
+  dat_path_inst/u2_alu/add_38/U1_18/CO (FADDX1)           0.06       2.75 r
+  dat_path_inst/u2_alu/add_38/U1_19/CO (FADDX1)           0.06       2.81 r
+  dat_path_inst/u2_alu/add_38/U1_20/CO (FADDX1)           0.06       2.88 r
+  dat_path_inst/u2_alu/add_38/U1_21/CO (FADDX1)           0.06       2.94 r
+  dat_path_inst/u2_alu/add_38/U1_22/CO (FADDX1)           0.06       3.00 r
+  dat_path_inst/u2_alu/add_38/U1_23/CO (FADDX1)           0.06       3.07 r
+  dat_path_inst/u2_alu/add_38/U1_24/CO (FADDX1)           0.06       3.13 r
+  dat_path_inst/u2_alu/add_38/U1_25/CO (FADDX1)           0.06       3.19 r
+  dat_path_inst/u2_alu/add_38/U1_26/CO (FADDX1)           0.06       3.26 r
+  dat_path_inst/u2_alu/add_38/U1_27/S (FADDX1)            0.05       3.30 r
+  dat_path_inst/u2_alu/add_38/SUM[27] (mips_alu_DW01_add_0)
+                                                          0.00       3.30 r
+  dat_path_inst/u2_alu/U95/Q (AO221X1)                    0.07       3.38 r
+  dat_path_inst/u2_alu/alu_out[27] (mips_alu)             0.00       3.38 r
+  dat_path_inst/data_mem_addr[27] (mips_datapath)         0.00       3.38 r
+  Addr[27] (out)                                          0.00       3.38 r
+  data arrival time                                                  3.38
+
+  clock clock (rise edge)                                10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  output external delay                                  -1.00       8.80
+  data required time                                                 8.80
+  ------------------------------------------------------------------------------
+  data required time                                                 8.80
+  data arrival time                                                 -3.38
+  ------------------------------------------------------------------------------
+  slack (MET)                                                        5.42
+
+
+  Startpoint: Inst[16] (input port clocked by clock)
+  Endpoint: Addr[26] (output port clocked by clock)
+  Path Group: clock
+  Path Type: max
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 f
+  Inst[16] (in)                                           0.00       1.00 f
+  dat_path_inst/inst[16] (mips_datapath)                  0.00       1.00 f
+  dat_path_inst/u1_reg_file/rd_addr2[0] (reg_file)        0.00       1.00 f
+  dat_path_inst/u1_reg_file/U4/ZN (INVX0)                 0.06       1.06 r
+  dat_path_inst/u1_reg_file/U1328/ZN (INVX0)              0.19       1.25 f
+  dat_path_inst/u1_reg_file/U1786/Q (MUX41X1)             0.12       1.37 r
+  dat_path_inst/u1_reg_file/U1787/Q (MUX41X1)             0.08       1.44 r
+  dat_path_inst/u1_reg_file/U1793/Q (MUX21X1)             0.06       1.50 r
+  dat_path_inst/u1_reg_file/rd_data2[0] (reg_file)        0.00       1.50 r
+  dat_path_inst/U153/Q (AO22X1)                           0.07       1.57 r
+  dat_path_inst/u2_alu/in2[0] (mips_alu)                  0.00       1.57 r
+  dat_path_inst/u2_alu/add_38/B[0] (mips_alu_DW01_add_0)
+                                                          0.00       1.57 r
+  dat_path_inst/u2_alu/add_38/U1/Q (AND2X1)               0.04       1.61 r
+  dat_path_inst/u2_alu/add_38/U1_1/CO (FADDX1)            0.06       1.67 r
+  dat_path_inst/u2_alu/add_38/U1_2/CO (FADDX1)            0.06       1.74 r
+  dat_path_inst/u2_alu/add_38/U1_3/CO (FADDX1)            0.06       1.80 r
+  dat_path_inst/u2_alu/add_38/U1_4/CO (FADDX1)            0.06       1.86 r
+  dat_path_inst/u2_alu/add_38/U1_5/CO (FADDX1)            0.06       1.93 r
+  dat_path_inst/u2_alu/add_38/U1_6/CO (FADDX1)            0.06       1.99 r
+  dat_path_inst/u2_alu/add_38/U1_7/CO (FADDX1)            0.06       2.05 r
+  dat_path_inst/u2_alu/add_38/U1_8/CO (FADDX1)            0.06       2.12 r
+  dat_path_inst/u2_alu/add_38/U1_9/CO (FADDX1)            0.06       2.18 r
+  dat_path_inst/u2_alu/add_38/U1_10/CO (FADDX1)           0.06       2.24 r
+  dat_path_inst/u2_alu/add_38/U1_11/CO (FADDX1)           0.06       2.31 r
+  dat_path_inst/u2_alu/add_38/U1_12/CO (FADDX1)           0.06       2.37 r
+  dat_path_inst/u2_alu/add_38/U1_13/CO (FADDX1)           0.06       2.43 r
+  dat_path_inst/u2_alu/add_38/U1_14/CO (FADDX1)           0.06       2.50 r
+  dat_path_inst/u2_alu/add_38/U1_15/CO (FADDX1)           0.06       2.56 r
+  dat_path_inst/u2_alu/add_38/U1_16/CO (FADDX1)           0.06       2.62 r
+  dat_path_inst/u2_alu/add_38/U1_17/CO (FADDX1)           0.06       2.69 r
+  dat_path_inst/u2_alu/add_38/U1_18/CO (FADDX1)           0.06       2.75 r
+  dat_path_inst/u2_alu/add_38/U1_19/CO (FADDX1)           0.06       2.81 r
+  dat_path_inst/u2_alu/add_38/U1_20/CO (FADDX1)           0.06       2.88 r
+  dat_path_inst/u2_alu/add_38/U1_21/CO (FADDX1)           0.06       2.94 r
+  dat_path_inst/u2_alu/add_38/U1_22/CO (FADDX1)           0.06       3.00 r
+  dat_path_inst/u2_alu/add_38/U1_23/CO (FADDX1)           0.06       3.07 r
+  dat_path_inst/u2_alu/add_38/U1_24/CO (FADDX1)           0.06       3.13 r
+  dat_path_inst/u2_alu/add_38/U1_25/CO (FADDX1)           0.06       3.19 r
+  dat_path_inst/u2_alu/add_38/U1_26/S (FADDX1)            0.05       3.24 r
+  dat_path_inst/u2_alu/add_38/SUM[26] (mips_alu_DW01_add_0)
+                                                          0.00       3.24 r
+  dat_path_inst/u2_alu/U98/Q (AO221X1)                    0.07       3.32 r
+  dat_path_inst/u2_alu/alu_out[26] (mips_alu)             0.00       3.32 r
+  dat_path_inst/data_mem_addr[26] (mips_datapath)         0.00       3.32 r
+  Addr[26] (out)                                          0.00       3.32 r
+  data arrival time                                                  3.32
+
+  clock clock (rise edge)                                10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  output external delay                                  -1.00       8.80
+  data required time                                                 8.80
+  ------------------------------------------------------------------------------
+  data required time                                                 8.80
+  data arrival time                                                 -3.32
+  ------------------------------------------------------------------------------
+  slack (MET)                                                        5.48
+
+
+  Startpoint: Inst[16] (input port clocked by clock)
+  Endpoint: Addr[25] (output port clocked by clock)
+  Path Group: clock
+  Path Type: max
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 f
+  Inst[16] (in)                                           0.00       1.00 f
+  dat_path_inst/inst[16] (mips_datapath)                  0.00       1.00 f
+  dat_path_inst/u1_reg_file/rd_addr2[0] (reg_file)        0.00       1.00 f
+  dat_path_inst/u1_reg_file/U4/ZN (INVX0)                 0.06       1.06 r
+  dat_path_inst/u1_reg_file/U1328/ZN (INVX0)              0.19       1.25 f
+  dat_path_inst/u1_reg_file/U1786/Q (MUX41X1)             0.12       1.37 r
+  dat_path_inst/u1_reg_file/U1787/Q (MUX41X1)             0.08       1.44 r
+  dat_path_inst/u1_reg_file/U1793/Q (MUX21X1)             0.06       1.50 r
+  dat_path_inst/u1_reg_file/rd_data2[0] (reg_file)        0.00       1.50 r
+  dat_path_inst/U153/Q (AO22X1)                           0.07       1.57 r
+  dat_path_inst/u2_alu/in2[0] (mips_alu)                  0.00       1.57 r
+  dat_path_inst/u2_alu/add_38/B[0] (mips_alu_DW01_add_0)
+                                                          0.00       1.57 r
+  dat_path_inst/u2_alu/add_38/U1/Q (AND2X1)               0.04       1.61 r
+  dat_path_inst/u2_alu/add_38/U1_1/CO (FADDX1)            0.06       1.67 r
+  dat_path_inst/u2_alu/add_38/U1_2/CO (FADDX1)            0.06       1.74 r
+  dat_path_inst/u2_alu/add_38/U1_3/CO (FADDX1)            0.06       1.80 r
+  dat_path_inst/u2_alu/add_38/U1_4/CO (FADDX1)            0.06       1.86 r
+  dat_path_inst/u2_alu/add_38/U1_5/CO (FADDX1)            0.06       1.93 r
+  dat_path_inst/u2_alu/add_38/U1_6/CO (FADDX1)            0.06       1.99 r
+  dat_path_inst/u2_alu/add_38/U1_7/CO (FADDX1)            0.06       2.05 r
+  dat_path_inst/u2_alu/add_38/U1_8/CO (FADDX1)            0.06       2.12 r
+  dat_path_inst/u2_alu/add_38/U1_9/CO (FADDX1)            0.06       2.18 r
+  dat_path_inst/u2_alu/add_38/U1_10/CO (FADDX1)           0.06       2.24 r
+  dat_path_inst/u2_alu/add_38/U1_11/CO (FADDX1)           0.06       2.31 r
+  dat_path_inst/u2_alu/add_38/U1_12/CO (FADDX1)           0.06       2.37 r
+  dat_path_inst/u2_alu/add_38/U1_13/CO (FADDX1)           0.06       2.43 r
+  dat_path_inst/u2_alu/add_38/U1_14/CO (FADDX1)           0.06       2.50 r
+  dat_path_inst/u2_alu/add_38/U1_15/CO (FADDX1)           0.06       2.56 r
+  dat_path_inst/u2_alu/add_38/U1_16/CO (FADDX1)           0.06       2.62 r
+  dat_path_inst/u2_alu/add_38/U1_17/CO (FADDX1)           0.06       2.69 r
+  dat_path_inst/u2_alu/add_38/U1_18/CO (FADDX1)           0.06       2.75 r
+  dat_path_inst/u2_alu/add_38/U1_19/CO (FADDX1)           0.06       2.81 r
+  dat_path_inst/u2_alu/add_38/U1_20/CO (FADDX1)           0.06       2.88 r
+  dat_path_inst/u2_alu/add_38/U1_21/CO (FADDX1)           0.06       2.94 r
+  dat_path_inst/u2_alu/add_38/U1_22/CO (FADDX1)           0.06       3.00 r
+  dat_path_inst/u2_alu/add_38/U1_23/CO (FADDX1)           0.06       3.07 r
+  dat_path_inst/u2_alu/add_38/U1_24/CO (FADDX1)           0.06       3.13 r
+  dat_path_inst/u2_alu/add_38/U1_25/S (FADDX1)            0.05       3.18 r
+  dat_path_inst/u2_alu/add_38/SUM[25] (mips_alu_DW01_add_0)
+                                                          0.00       3.18 r
+  dat_path_inst/u2_alu/U101/Q (AO221X1)                   0.07       3.25 r
+  dat_path_inst/u2_alu/alu_out[25] (mips_alu)             0.00       3.25 r
+  dat_path_inst/data_mem_addr[25] (mips_datapath)         0.00       3.25 r
+  Addr[25] (out)                                          0.00       3.25 r
+  data arrival time                                                  3.25
+
+  clock clock (rise edge)                                10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  output external delay                                  -1.00       8.80
+  data required time                                                 8.80
+  ------------------------------------------------------------------------------
+  data required time                                                 8.80
+  data arrival time                                                 -3.25
+  ------------------------------------------------------------------------------
+  slack (MET)                                                        5.55
+
+
+  Startpoint: Inst[16] (input port clocked by clock)
+  Endpoint: Addr[24] (output port clocked by clock)
+  Path Group: clock
+  Path Type: max
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 f
+  Inst[16] (in)                                           0.00       1.00 f
+  dat_path_inst/inst[16] (mips_datapath)                  0.00       1.00 f
+  dat_path_inst/u1_reg_file/rd_addr2[0] (reg_file)        0.00       1.00 f
+  dat_path_inst/u1_reg_file/U4/ZN (INVX0)                 0.06       1.06 r
+  dat_path_inst/u1_reg_file/U1328/ZN (INVX0)              0.19       1.25 f
+  dat_path_inst/u1_reg_file/U1786/Q (MUX41X1)             0.12       1.37 r
+  dat_path_inst/u1_reg_file/U1787/Q (MUX41X1)             0.08       1.44 r
+  dat_path_inst/u1_reg_file/U1793/Q (MUX21X1)             0.06       1.50 r
+  dat_path_inst/u1_reg_file/rd_data2[0] (reg_file)        0.00       1.50 r
+  dat_path_inst/U153/Q (AO22X1)                           0.07       1.57 r
+  dat_path_inst/u2_alu/in2[0] (mips_alu)                  0.00       1.57 r
+  dat_path_inst/u2_alu/add_38/B[0] (mips_alu_DW01_add_0)
+                                                          0.00       1.57 r
+  dat_path_inst/u2_alu/add_38/U1/Q (AND2X1)               0.04       1.61 r
+  dat_path_inst/u2_alu/add_38/U1_1/CO (FADDX1)            0.06       1.67 r
+  dat_path_inst/u2_alu/add_38/U1_2/CO (FADDX1)            0.06       1.74 r
+  dat_path_inst/u2_alu/add_38/U1_3/CO (FADDX1)            0.06       1.80 r
+  dat_path_inst/u2_alu/add_38/U1_4/CO (FADDX1)            0.06       1.86 r
+  dat_path_inst/u2_alu/add_38/U1_5/CO (FADDX1)            0.06       1.93 r
+  dat_path_inst/u2_alu/add_38/U1_6/CO (FADDX1)            0.06       1.99 r
+  dat_path_inst/u2_alu/add_38/U1_7/CO (FADDX1)            0.06       2.05 r
+  dat_path_inst/u2_alu/add_38/U1_8/CO (FADDX1)            0.06       2.12 r
+  dat_path_inst/u2_alu/add_38/U1_9/CO (FADDX1)            0.06       2.18 r
+  dat_path_inst/u2_alu/add_38/U1_10/CO (FADDX1)           0.06       2.24 r
+  dat_path_inst/u2_alu/add_38/U1_11/CO (FADDX1)           0.06       2.31 r
+  dat_path_inst/u2_alu/add_38/U1_12/CO (FADDX1)           0.06       2.37 r
+  dat_path_inst/u2_alu/add_38/U1_13/CO (FADDX1)           0.06       2.43 r
+  dat_path_inst/u2_alu/add_38/U1_14/CO (FADDX1)           0.06       2.50 r
+  dat_path_inst/u2_alu/add_38/U1_15/CO (FADDX1)           0.06       2.56 r
+  dat_path_inst/u2_alu/add_38/U1_16/CO (FADDX1)           0.06       2.62 r
+  dat_path_inst/u2_alu/add_38/U1_17/CO (FADDX1)           0.06       2.69 r
+  dat_path_inst/u2_alu/add_38/U1_18/CO (FADDX1)           0.06       2.75 r
+  dat_path_inst/u2_alu/add_38/U1_19/CO (FADDX1)           0.06       2.81 r
+  dat_path_inst/u2_alu/add_38/U1_20/CO (FADDX1)           0.06       2.88 r
+  dat_path_inst/u2_alu/add_38/U1_21/CO (FADDX1)           0.06       2.94 r
+  dat_path_inst/u2_alu/add_38/U1_22/CO (FADDX1)           0.06       3.00 r
+  dat_path_inst/u2_alu/add_38/U1_23/CO (FADDX1)           0.06       3.07 r
+  dat_path_inst/u2_alu/add_38/U1_24/S (FADDX1)            0.05       3.11 r
+  dat_path_inst/u2_alu/add_38/SUM[24] (mips_alu_DW01_add_0)
+                                                          0.00       3.11 r
+  dat_path_inst/u2_alu/U104/Q (AO221X1)                   0.07       3.19 r
+  dat_path_inst/u2_alu/alu_out[24] (mips_alu)             0.00       3.19 r
+  dat_path_inst/data_mem_addr[24] (mips_datapath)         0.00       3.19 r
+  Addr[24] (out)                                          0.00       3.19 r
+  data arrival time                                                  3.19
+
+  clock clock (rise edge)                                10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  output external delay                                  -1.00       8.80
+  data required time                                                 8.80
+  ------------------------------------------------------------------------------
+  data required time                                                 8.80
+  data arrival time                                                 -3.19
+  ------------------------------------------------------------------------------
+  slack (MET)                                                        5.61
+
+
+  Startpoint: Inst[16] (input port clocked by clock)
+  Endpoint: Addr[23] (output port clocked by clock)
+  Path Group: clock
+  Path Type: max
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 f
+  Inst[16] (in)                                           0.00       1.00 f
+  dat_path_inst/inst[16] (mips_datapath)                  0.00       1.00 f
+  dat_path_inst/u1_reg_file/rd_addr2[0] (reg_file)        0.00       1.00 f
+  dat_path_inst/u1_reg_file/U4/ZN (INVX0)                 0.06       1.06 r
+  dat_path_inst/u1_reg_file/U1328/ZN (INVX0)              0.19       1.25 f
+  dat_path_inst/u1_reg_file/U1786/Q (MUX41X1)             0.12       1.37 r
+  dat_path_inst/u1_reg_file/U1787/Q (MUX41X1)             0.08       1.44 r
+  dat_path_inst/u1_reg_file/U1793/Q (MUX21X1)             0.06       1.50 r
+  dat_path_inst/u1_reg_file/rd_data2[0] (reg_file)        0.00       1.50 r
+  dat_path_inst/U153/Q (AO22X1)                           0.07       1.57 r
+  dat_path_inst/u2_alu/in2[0] (mips_alu)                  0.00       1.57 r
+  dat_path_inst/u2_alu/add_38/B[0] (mips_alu_DW01_add_0)
+                                                          0.00       1.57 r
+  dat_path_inst/u2_alu/add_38/U1/Q (AND2X1)               0.04       1.61 r
+  dat_path_inst/u2_alu/add_38/U1_1/CO (FADDX1)            0.06       1.67 r
+  dat_path_inst/u2_alu/add_38/U1_2/CO (FADDX1)            0.06       1.74 r
+  dat_path_inst/u2_alu/add_38/U1_3/CO (FADDX1)            0.06       1.80 r
+  dat_path_inst/u2_alu/add_38/U1_4/CO (FADDX1)            0.06       1.86 r
+  dat_path_inst/u2_alu/add_38/U1_5/CO (FADDX1)            0.06       1.93 r
+  dat_path_inst/u2_alu/add_38/U1_6/CO (FADDX1)            0.06       1.99 r
+  dat_path_inst/u2_alu/add_38/U1_7/CO (FADDX1)            0.06       2.05 r
+  dat_path_inst/u2_alu/add_38/U1_8/CO (FADDX1)            0.06       2.12 r
+  dat_path_inst/u2_alu/add_38/U1_9/CO (FADDX1)            0.06       2.18 r
+  dat_path_inst/u2_alu/add_38/U1_10/CO (FADDX1)           0.06       2.24 r
+  dat_path_inst/u2_alu/add_38/U1_11/CO (FADDX1)           0.06       2.31 r
+  dat_path_inst/u2_alu/add_38/U1_12/CO (FADDX1)           0.06       2.37 r
+  dat_path_inst/u2_alu/add_38/U1_13/CO (FADDX1)           0.06       2.43 r
+  dat_path_inst/u2_alu/add_38/U1_14/CO (FADDX1)           0.06       2.50 r
+  dat_path_inst/u2_alu/add_38/U1_15/CO (FADDX1)           0.06       2.56 r
+  dat_path_inst/u2_alu/add_38/U1_16/CO (FADDX1)           0.06       2.62 r
+  dat_path_inst/u2_alu/add_38/U1_17/CO (FADDX1)           0.06       2.69 r
+  dat_path_inst/u2_alu/add_38/U1_18/CO (FADDX1)           0.06       2.75 r
+  dat_path_inst/u2_alu/add_38/U1_19/CO (FADDX1)           0.06       2.81 r
+  dat_path_inst/u2_alu/add_38/U1_20/CO (FADDX1)           0.06       2.88 r
+  dat_path_inst/u2_alu/add_38/U1_21/CO (FADDX1)           0.06       2.94 r
+  dat_path_inst/u2_alu/add_38/U1_22/CO (FADDX1)           0.06       3.00 r
+  dat_path_inst/u2_alu/add_38/U1_23/S (FADDX1)            0.05       3.05 r
+  dat_path_inst/u2_alu/add_38/SUM[23] (mips_alu_DW01_add_0)
+                                                          0.00       3.05 r
+  dat_path_inst/u2_alu/U107/Q (AO221X1)                   0.07       3.12 r
+  dat_path_inst/u2_alu/alu_out[23] (mips_alu)             0.00       3.12 r
+  dat_path_inst/data_mem_addr[23] (mips_datapath)         0.00       3.12 r
+  Addr[23] (out)                                          0.00       3.12 r
+  data arrival time                                                  3.12
+
+  clock clock (rise edge)                                10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  output external delay                                  -1.00       8.80
+  data required time                                                 8.80
+  ------------------------------------------------------------------------------
+  data required time                                                 8.80
+  data arrival time                                                 -3.12
+  ------------------------------------------------------------------------------
+  slack (MET)                                                        5.68
+
+
+  Startpoint: Inst[16] (input port clocked by clock)
+  Endpoint: Addr[22] (output port clocked by clock)
+  Path Group: clock
+  Path Type: max
+
+  Point                                                   Incr       Path
+  ------------------------------------------------------------------------------
+  clock clock (rise edge)                                 0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    1.00       1.00 f
+  Inst[16] (in)                                           0.00       1.00 f
+  dat_path_inst/inst[16] (mips_datapath)                  0.00       1.00 f
+  dat_path_inst/u1_reg_file/rd_addr2[0] (reg_file)        0.00       1.00 f
+  dat_path_inst/u1_reg_file/U4/ZN (INVX0)                 0.06       1.06 r
+  dat_path_inst/u1_reg_file/U1328/ZN (INVX0)              0.19       1.25 f
+  dat_path_inst/u1_reg_file/U1786/Q (MUX41X1)             0.12       1.37 r
+  dat_path_inst/u1_reg_file/U1787/Q (MUX41X1)             0.08       1.44 r
+  dat_path_inst/u1_reg_file/U1793/Q (MUX21X1)             0.06       1.50 r
+  dat_path_inst/u1_reg_file/rd_data2[0] (reg_file)        0.00       1.50 r
+  dat_path_inst/U153/Q (AO22X1)                           0.07       1.57 r
+  dat_path_inst/u2_alu/in2[0] (mips_alu)                  0.00       1.57 r
+  dat_path_inst/u2_alu/add_38/B[0] (mips_alu_DW01_add_0)
+                                                          0.00       1.57 r
+  dat_path_inst/u2_alu/add_38/U1/Q (AND2X1)               0.04       1.61 r
+  dat_path_inst/u2_alu/add_38/U1_1/CO (FADDX1)            0.06       1.67 r
+  dat_path_inst/u2_alu/add_38/U1_2/CO (FADDX1)            0.06       1.74 r
+  dat_path_inst/u2_alu/add_38/U1_3/CO (FADDX1)            0.06       1.80 r
+  dat_path_inst/u2_alu/add_38/U1_4/CO (FADDX1)            0.06       1.86 r
+  dat_path_inst/u2_alu/add_38/U1_5/CO (FADDX1)            0.06       1.93 r
+  dat_path_inst/u2_alu/add_38/U1_6/CO (FADDX1)            0.06       1.99 r
+  dat_path_inst/u2_alu/add_38/U1_7/CO (FADDX1)            0.06       2.05 r
+  dat_path_inst/u2_alu/add_38/U1_8/CO (FADDX1)            0.06       2.12 r
+  dat_path_inst/u2_alu/add_38/U1_9/CO (FADDX1)            0.06       2.18 r
+  dat_path_inst/u2_alu/add_38/U1_10/CO (FADDX1)           0.06       2.24 r
+  dat_path_inst/u2_alu/add_38/U1_11/CO (FADDX1)           0.06       2.31 r
+  dat_path_inst/u2_alu/add_38/U1_12/CO (FADDX1)           0.06       2.37 r
+  dat_path_inst/u2_alu/add_38/U1_13/CO (FADDX1)           0.06       2.43 r
+  dat_path_inst/u2_alu/add_38/U1_14/CO (FADDX1)           0.06       2.50 r
+  dat_path_inst/u2_alu/add_38/U1_15/CO (FADDX1)           0.06       2.56 r
+  dat_path_inst/u2_alu/add_38/U1_16/CO (FADDX1)           0.06       2.62 r
+  dat_path_inst/u2_alu/add_38/U1_17/CO (FADDX1)           0.06       2.69 r
+  dat_path_inst/u2_alu/add_38/U1_18/CO (FADDX1)           0.06       2.75 r
+  dat_path_inst/u2_alu/add_38/U1_19/CO (FADDX1)           0.06       2.81 r
+  dat_path_inst/u2_alu/add_38/U1_20/CO (FADDX1)           0.06       2.88 r
+  dat_path_inst/u2_alu/add_38/U1_21/CO (FADDX1)           0.06       2.94 r
+  dat_path_inst/u2_alu/add_38/U1_22/S (FADDX1)            0.05       2.99 r
+  dat_path_inst/u2_alu/add_38/SUM[22] (mips_alu_DW01_add_0)
+                                                          0.00       2.99 r
+  dat_path_inst/u2_alu/U110/Q (AO221X1)                   0.07       3.06 r
+  dat_path_inst/u2_alu/alu_out[22] (mips_alu)             0.00       3.06 r
+  dat_path_inst/data_mem_addr[22] (mips_datapath)         0.00       3.06 r
+  Addr[22] (out)                                          0.00       3.06 r
+  data arrival time                                                  3.06
+
+  clock clock (rise edge)                                10.00      10.00
+  clock network delay (ideal)                             0.00      10.00
+  clock uncertainty                                      -0.20       9.80
+  output external delay                                  -1.00       8.80
+  data required time                                                 8.80
+  ------------------------------------------------------------------------------
+  data required time                                                 8.80
+  data arrival time                                                 -3.06
+  ------------------------------------------------------------------------------
+  slack (MET)                                                        5.74
+
+
+1
