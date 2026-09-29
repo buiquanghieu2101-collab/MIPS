@@ -1,0 +1,32 @@
+# Simulation generated files
+sim/csrc/
+sim/simv.daidir/
+sim/simv
+sim/*.vpd
+sim/*.vcd
+sim/*.log
+sim/*.key
+
+# Synopsys generated files
+*.mr
+*.syn
+*.ev
+*.evx
+*.o
+
+# PDK / technology files
+*.db
+*.lib
+*.lef
+*.tf
+*.tluplus
+*.pvl
+
+# Milkyway / ICC databases
+MIPS_Lib/
+icc/MIPS_Lib/
+icc_new/MIPS_Lib/
+
+# Generated run data
+run_details/
+icc/run_details/
