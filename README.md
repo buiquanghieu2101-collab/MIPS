@@ -52,7 +52,7 @@ PrimeTime
 Final GDS
 ```
 
-## 5. RTL Design
+## 3. RTL Design
 
 The processor is described using Verilog RTL.
 
@@ -73,7 +73,7 @@ processor
 
 ---
 
-## 6. RTL Simulation
+## 4. RTL Simulation
 
 RTL simulation was performed using **Synopsys VCS**.
 
@@ -85,7 +85,7 @@ The testbench verifies the functional behavior of the MIPS processor before synt
 
 ---
 
-## 8. Logic Synthesis
+## 5. Logic Synthesis
 
 Logic synthesis was performed using **Synopsys Design Compiler**.
 
@@ -111,11 +111,11 @@ netlist/mips_NL.v
 
 ---
 
-## 9. Physical Design
+## 6. Physical Design
 
 Physical implementation was performed using **Synopsys IC Compiler**.
 
-### 9.1 Floorplanning
+### Floorplanning
 
 A core utilization of approximately **70%** was used for the initial floorplan.
 
@@ -123,7 +123,7 @@ A core utilization of approximately **70%** was used for the initial floorplan.
 
 ---
 
-### 9.2 Placement
+### Placement
 
 Standard cells were placed inside the core area while considering timing and routing constraints.
 
@@ -131,7 +131,7 @@ Standard cells were placed inside the core area while considering timing and rou
 
 ---
 
-### 9.3 Clock Tree Synthesis
+### Clock Tree Synthesis
 
 Clock Tree Synthesis (CTS) was performed to distribute the clock signal across the design.
 
@@ -151,7 +151,7 @@ After CTS:
 
 ---
 
-### 9.4 Routing
+### Routing
 
 Global and detailed routing were performed using IC Compiler.
 
@@ -170,7 +170,7 @@ After routing:
 Static Timing Analysis was performed using **Synopsys PrimeTime**.
 ---
 
-## 11. Final Layout
+## 7. Final Layout
 
 The final routed design was exported as a **GDSII** file.
 
@@ -180,11 +180,11 @@ final/processor.gds
 
 ### Final Layout
 
-![Final Layout](pic/Picture11.png)
+![Final Layout](pic/layout.png)
 
 ---
 
-## 12. Key Results
+## 8. Key Results
 
 | Parameter              |     Result |
 | ---------------------- | ---------: |
