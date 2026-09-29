@@ -175,7 +175,7 @@ Static Timing Analysis was performed using **Synopsys PrimeTime**.
 The final routed design was exported as a **GDSII** file.
 
 ```text
-final/processor.gds
+processor.gds
 ```
 
 ### Final Layout
@@ -197,6 +197,3 @@ final/processor.gds
 | Routed Setup Slack     |   +3.24 ns |
 | Total Negative Slack   |          0 |
 | Routing Net Violations |          0 |
-
-IC Design Specialization
-University of Science, VNU-HCM
