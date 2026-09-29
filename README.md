@@ -1,49 +1,202 @@
-# MIPS Processor ASIC Physical Design
+# MIPS Processor — ASIC Physical Design Full Flow
 
-A MIPS processor implemented in Verilog and taken through a complete ASIC design flow using Synopsys tools.
+A 32-bit MIPS processor implemented in Verilog and taken through a complete ASIC physical design flow using Synopsys tools.
 
-## Design Flow
+---
 
-RTL
-→ VCS Simulation
-→ SDC Constraints
-→ Design Compiler Synthesis
-→ ICC Floorplan
-→ Placement
-→ Clock Tree Synthesis
-→ Routing
-→ DRC
-→ PrimeTime STA
+## 1. Project Overview
 
-## Project Structure
+This project demonstrates the implementation of a MIPS processor from RTL design to physical implementation.
 
-- `rtl/` — Verilog RTL and testbench
-- `constraints/` — SDC timing constraints
-- `dc/` — Design Compiler scripts and reports
-- `netlist/` — synthesized netlist
-- `icc/` — ICC physical design reports
-- `pt/` — PrimeTime setup/hold reports
-- `final/` — final GDS layout
+The complete ASIC design flow includes:
 
-## Tools
+**RTL → Simulation → SDC → Synthesis → Floorplan → Placement → CTS → Routing → STA → GDS**
 
-- Synopsys VCS
-- Synopsys Design Compiler
-- Synopsys IC Compiler
-- Synopsys PrimeTime
-- SAED 90nm technology library
+The design was implemented using a **90 nm standard-cell technology library**.
 
-## Physical Design Flow
+---
 
-The design was synthesized from RTL and implemented through floorplanning, placement, CTS, and routing.
+## 2. Design Flow
 
-The final routed design achieved:
+```text
+RTL Design
+    │
+    ▼
+VCS Simulation
+    │
+    ▼
+SDC Timing Constraints
+    │
+    ▼
+Design Compiler
+    │
+    ├── Logic Synthesis
+    ├── Area Analysis
+    └── Timing Analysis
+    │
+    ▼
+IC Compiler
+    │
+    ├── Floorplanning
+    ├── Placement
+    ├── Clock Tree Synthesis
+    └── Routing
+    │
+    ▼
+PrimeTime
+    │
+    ├── Setup Analysis
+    └── Hold Analysis
+    │
+    ▼
+Final GDS
+```
 
-- Clock period: 10 ns
-- Setup slack: positive
-- Hold slack: positive
-- Routing net violations: 0
+## 5. RTL Design
 
-## Author
+The processor is described using Verilog RTL.
 
-Bui Quang Hieu
+Main RTL blocks include:
+
+* ALU
+* Register File
+* Controller
+* Datapath
+* Shifter
+* CPU Top Module
+
+Top-level module:
+
+```text
+processor
+```
+
+---
+
+## 6. RTL Simulation
+
+RTL simulation was performed using **Synopsys VCS**.
+
+The testbench verifies the functional behavior of the MIPS processor before synthesis.
+
+### Simulation Waveform
+
+![RTL Simulation Waveform](pic/Picture1.png)
+
+---
+
+## 8. Logic Synthesis
+
+Logic synthesis was performed using **Synopsys Design Compiler**.
+
+The RTL was synthesized into a gate-level netlist using the SAED 90 nm standard-cell library.
+
+### Gate-Level Schematic
+
+![Schematic](pic/Picture2.png)
+
+### Area Report
+
+![Area Report](pic/Picture7.png)
+
+### Timing Report
+
+![Timing Report](pic/Picture8.png)
+
+Generated netlist:
+
+```text
+netlist/mips_NL.v
+```
+
+---
+
+## 9. Physical Design
+
+Physical implementation was performed using **Synopsys IC Compiler**.
+
+### 9.1 Floorplanning
+
+A core utilization of approximately **70%** was used for the initial floorplan.
+
+![Floorplan](pic/Picture3.png)
+
+---
+
+### 9.2 Placement
+
+Standard cells were placed inside the core area while considering timing and routing constraints.
+
+![Placement](pic/Picture4.png)
+
+---
+
+### 9.3 Clock Tree Synthesis
+
+Clock Tree Synthesis (CTS) was performed to distribute the clock signal across the design.
+
+![Clock Tree Synthesis](pic/Picture5.png)
+
+After CTS:
+
+| Parameter                   |   Result |
+| --------------------------- | -------: |
+| Clock Period                |    10 ns |
+| Setup Slack                 | +3.02 ns |
+| TNS                         |     0 ns |
+| Violating Paths             |        0 |
+| Hold Violation              |        0 |
+| Leaf Cells                  |    4,209 |
+| Clock Buffer/Inverter Cells |        6 |
+
+---
+
+### 9.4 Routing
+
+Global and detailed routing were performed using IC Compiler.
+
+After routing:
+
+| Parameter              |   Result |
+| ---------------------- | -------: |
+| Setup Slack            | +3.24 ns |
+| Total Negative Slack   |     0 ns |
+| Violating Paths        |        0 |
+| Routing Net Violations |        0 |
+
+![Routing](pic/Picture6.png)
+
+
+Static Timing Analysis was performed using **Synopsys PrimeTime**.
+---
+
+## 11. Final Layout
+
+The final routed design was exported as a **GDSII** file.
+
+```text
+final/processor.gds
+```
+
+### Final Layout
+
+![Final Layout](pic/Picture11.png)
+
+---
+
+## 12. Key Results
+
+| Parameter              |     Result |
+| ---------------------- | ---------: |
+| Technology             | SAED 90 nm |
+| Clock Period           |      10 ns |
+| Clock Frequency        |    100 MHz |
+| Core Utilization       |       ~70% |
+| CTS Setup Slack        |   +3.02 ns |
+| CTS Hold Violation     |          0 |
+| Routed Setup Slack     |   +3.24 ns |
+| Total Negative Slack   |          0 |
+| Routing Net Violations |          0 |
+
+IC Design Specialization
+University of Science, VNU-HCM
