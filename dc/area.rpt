@@ -1,0 +1,28 @@
+Information: Updating graph... (UID-83)
+Warning: Design 'processor' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : area
+Design : processor
+Version: D-2010.03-SP4
+Date   : Wed Mar 28 04:49:58 2018
+****************************************
+
+Information: Updating design information... (UID-85)
+Warning: Design 'processor' contains 1 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+Library(s) Used:
+
+    saed90nm_min (File: /home/ltk/ASIC_LIB/Lib/syn_lib/syn_lib/saed90nm_min.db)
+
+Number of ports:              164
+Number of nets:               182
+Number of cells:                3
+Number of references:           3
+
+Combinational area:       41890.406698
+Noncombinational area:    34062.336548
+Net Interconnect area:    8156.467226  
+
+Total cell area:          75952.743246
+Total area:               84109.210472
+1
