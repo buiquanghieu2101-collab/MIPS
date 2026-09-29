@@ -167,10 +167,13 @@ After routing:
 ![Routing](pic/Picture6.png)
 
 
-Static Timing Analysis was performed using **Synopsys PrimeTime**.
----
+## 7. Physical Verification
 
-## 7. Final Layout
+Design Rule Checking verifies whether the physical layout follows the technology design rules.
+
+![PV](pic/PV.png)
+
+## 8. Final Layout
 
 The final routed design was exported as a **GDSII** file.
 
@@ -184,7 +187,7 @@ processor.gds
 
 ---
 
-## 8. Key Results
+## 9. Key Results
 
 | Parameter              |     Result |
 | ---------------------- | ---------: |
